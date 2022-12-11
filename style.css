@@ -1,6 +1,7 @@
-body div {
+/*body div {
     border: green 2px solid;
-}
+}*/
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
@@ -16,8 +17,9 @@ body {
 }
 
 .header {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 ul {
@@ -35,8 +37,19 @@ a {
 }
 
 .logo {
- color: #f9faf8;
- font-size: 24px;
+    width: auto;
+    height: 50px;
+}
+
+.logo-div{
+    margin-left: 150px;
+}
+
+.links {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
 }
 
 .main {
@@ -52,6 +65,7 @@ a {
     font-weight: bolder;
     color: #f9faf8;
     width: 500px;
+    text-shadow: 2px 2px rgba(113, 4, 255, 0.703);
 }
 
 .main-text {
@@ -60,6 +74,7 @@ a {
     height: auto;
     width: 500px;
     padding: 16px 0;
+    text-shadow: 2px 2px rgba(113, 4, 255, 0.703);
 }
 
 button {
@@ -68,6 +83,10 @@ button {
     color: white;
     font-weight: 600;
     padding: 5px 16px;
+}
+
+.sign-up-top {
+    border: 2px white solid;
 }
 
 .left-main {
@@ -101,8 +120,22 @@ button {
 
 .image-1, .image-2, .image-3, .image-4 {
     width: 250px;
-    height: auto;
+    height: 200px;
     border-radius: 8px;
+    object-fit: cover;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: fantasy;
+    margin-left: 20px;
+}
+
+.artist {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 800;
 }
 
 .quote {
@@ -128,13 +161,40 @@ button {
 }
 
 .call-to-action {
-    background-color: #3882f6;
+    background-color: #7014a5;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 900px;
     height: 100px;
     margin: 50px auto;
     border-radius: 8px;
     color: white;
+    text-shadow: 2px 2px black;
+}
+
+.call-header {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+}
+
+.sign-up-bottom {
+    border: 2px solid white;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
